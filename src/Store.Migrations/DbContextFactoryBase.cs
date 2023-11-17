@@ -15,7 +15,7 @@ public class DbContextFactoryBase : IDesignTimeDbContextFactory<ResourceContext>
 
     private DbContextOptionsBuilder<ResourceContext> CreateDbContextOptions(string connectionString)
         => new DbContextOptionsBuilder<ResourceContext>()
-            .UseSqlServer(connectionString);
+            .UseSqlServer(connectionString, b => b.MigrationsAssembly("Store.Migrations"));
 
     private string GetConnectionString()
         => new ConfigurationBuilder()
