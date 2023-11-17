@@ -1,4 +1,5 @@
 ﻿using Store.Entities.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Store.Entities;
 
@@ -15,6 +16,7 @@ public class OrderItemRecord : BaseEntity
     /// <summary>
     /// ИД заказа
     /// </summary>
+    //[ForeignKey(nameof(OrderRecord))]
     public int OrderId { get; set; }
 
     public string Name { get; set; }

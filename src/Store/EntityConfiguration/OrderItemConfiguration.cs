@@ -11,7 +11,7 @@ public class OrderItemConfiguration : IEntityTypeConfiguration<OrderItemRecord>
     {
         builder.ConfigureBaseEntity<OrderItemRecord>();
 
-        builder.Property(x => x.OrderId).IsRequired();
+        
         builder.Property(x => x.Unit).HasMaxLength(MaxFieldLength).IsRequired();
         builder.Property(x => x.Name).HasMaxLength(MaxFieldLength).IsRequired();
         builder.Property(x => x.Quantity).HasPrecision(18,2).IsRequired();

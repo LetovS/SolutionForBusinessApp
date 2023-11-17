@@ -13,5 +13,6 @@ public class OrderConfiguration : IEntityTypeConfiguration<OrderRecord>
         builder.Property(x => x.Number).HasMaxLength(MaxFieldLength).IsRequired();
         builder.Property(x => x.ProviderId).IsRequired();
         builder.Property(x => x.Date).IsRequired();
+
     }
 }

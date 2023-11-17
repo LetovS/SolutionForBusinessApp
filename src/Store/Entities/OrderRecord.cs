@@ -4,7 +4,7 @@ namespace Store.Entities;
 
 public class OrderRecord : BaseEntity
 {
-    public OrderRecord(int id, string number, DateOnly date, int providerId) : base(id)
+    public OrderRecord(int id, string number, DateTime date, int providerId) : base(id)
     {
         Number = number;
         Date = date;
@@ -19,7 +19,7 @@ public class OrderRecord : BaseEntity
     /// <summary>
     /// Дата создания заказа
     /// </summary>
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
 
     /// <summary>
     /// ИД провайдера
