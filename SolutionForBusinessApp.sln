@@ -5,17 +5,13 @@ VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB265D07-727B-4C7C-B302-E9C8E301B734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "src\Store\Store.csproj", "{73718360-B62E-4C99-9918-834CFCA3A84E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store", "src\Store\Store.csproj", "{73718360-B62E-4C99-9918-834CFCA3A84E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Migrations", "src\Store.Migrations\Store.Migrations.csproj", "{E106E183-4124-48E3-941E-FF03F18232D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Migrations", "src\Store.Migrations\Store.Migrations.csproj", "{E106E183-4124-48E3-941E-FF03F18232D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "src\WebApp\WebApp.csproj", "{98428E95-F9B8-4A85-9A58-D778D4F62E63}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {83A0ECFC-571A-4570-9DFC-66A6B5F41B3F}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -49,9 +45,28 @@ Global
 		{E106E183-4124-48E3-941E-FF03F18232D4}.Release|x64.Build.0 = Release|Any CPU
 		{E106E183-4124-48E3-941E-FF03F18232D4}.Release|x86.ActiveCfg = Release|Any CPU
 		{E106E183-4124-48E3-941E-FF03F18232D4}.Release|x86.Build.0 = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|x64.Build.0 = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Debug|x86.Build.0 = Debug|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|x64.ActiveCfg = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|x64.Build.0 = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|x86.ActiveCfg = Release|Any CPU
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{73718360-B62E-4C99-9918-834CFCA3A84E} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
 		{E106E183-4124-48E3-941E-FF03F18232D4} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
+		{98428E95-F9B8-4A85-9A58-D778D4F62E63} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83A0ECFC-571A-4570-9DFC-66A6B5F41B3F}
 	EndGlobalSection
 EndGlobal
