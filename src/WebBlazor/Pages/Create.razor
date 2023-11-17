@@ -1,0 +1,23 @@
+﻿@page "/create"
+@inherits CreateModel
+<h3>Create</h3>
+
+<div class="row">
+    <div class="col">
+        @Counter
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="btn-group">
+            <button @onclick="StartAsync" class="btn btn-outline-secondary">Start</button>
+            <button @onclick="StopAsync" class="btn btn-outline-secondary">Stop</button>
+            <button @onclick="PauseAsync" class="btn btn-outline-secondary">Pause</button>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

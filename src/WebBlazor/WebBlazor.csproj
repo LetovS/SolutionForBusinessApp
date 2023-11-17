@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\Index.razor">
+      <DependentUpon>Counter.razor</DependentUpon>
+    </Content>
+  </ItemGroup>
+
 </Project>
