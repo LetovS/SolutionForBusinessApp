@@ -1,4 +1,5 @@
 ﻿using Store.Entities.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Store.Entities;
 
@@ -24,5 +25,10 @@ public class OrderRecord : BaseEntity
     /// <summary>
     /// ИД провайдера
     /// </summary>
+    [ForeignKey(nameof(Provider))]
     public int ProviderId { get; set; }
+
+    public ProviderRecord Provider { get; set; }
+
+    public virtual ICollection<OrderItemRecord> OrderItems { get; set; }
 }

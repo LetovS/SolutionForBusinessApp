@@ -13,4 +13,6 @@ public class ProviderRecord : BaseEntity
     /// Название провайдера
     /// </summary>
     public string Name { get; set; }
+
+    public virtual ICollection<OrderRecord> Orders { get; set; }
 }
