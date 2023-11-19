@@ -2,6 +2,9 @@
 
 namespace Store.Entities.Base;
 
+/// <summary>
+/// Базовая сущность базы данных
+/// </summary>
 public class BaseEntity : IEntityWithId
 {
     /// <summary>

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Migrations", "src\Sto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBlazor", "src\WebBlazor\WebBlazor.csproj", "{D1B11DC5-6BF0-440E-8422-91CA9E554436}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Repositories", "src\Store.Repositories\Store.Repositories.csproj", "{95013181-FB6B-44F0-893B-57E96D1B34F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,18 @@ Global
 		{D1B11DC5-6BF0-440E-8422-91CA9E554436}.Release|x64.Build.0 = Release|Any CPU
 		{D1B11DC5-6BF0-440E-8422-91CA9E554436}.Release|x86.ActiveCfg = Release|Any CPU
 		{D1B11DC5-6BF0-440E-8422-91CA9E554436}.Release|x86.Build.0 = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|x64.Build.0 = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{95013181-FB6B-44F0-893B-57E96D1B34F3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +79,7 @@ Global
 		{73718360-B62E-4C99-9918-834CFCA3A84E} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
 		{E106E183-4124-48E3-941E-FF03F18232D4} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
 		{D1B11DC5-6BF0-440E-8422-91CA9E554436} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
+		{95013181-FB6B-44F0-893B-57E96D1B34F3} = {DB265D07-727B-4C7C-B302-E9C8E301B734}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83A0ECFC-571A-4570-9DFC-66A6B5F41B3F}

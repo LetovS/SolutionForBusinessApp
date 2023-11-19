@@ -16,9 +16,12 @@ public class OrderItemRecord : BaseEntity
     /// <summary>
     /// ИД заказа
     /// </summary>
-    //[ForeignKey(nameof(OrderRecord))]
+    [ForeignKey(nameof(OrderRecord))]
     public int OrderId { get; set; }
 
+    /// <summary>
+    /// Название товара
+    /// </summary>
     public string Name { get; set; }
 
     /// <summary>
