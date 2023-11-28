@@ -7,7 +7,7 @@ using Store.Migrations;
 using Store.Repositories.Abstracts;
 using Store.Repositories.Implementations;
 
-namespace Store.Repositories.Extensions;
+namespace Store.Repositories.DI;
 
 public static class RepositoriesServiceCollectionExtensions
 {
@@ -21,10 +21,11 @@ public static class RepositoriesServiceCollectionExtensions
         services.AddScoped<IDbReader, ResourceContext>();
         services.AddScoped<IDbUnitOfWork, ResourceContext>();
         services.AddScoped<IDbWriter, ResourceContext>();
+
+        services.AddScoped<IEntityFactory, EntityFactory>();
         
-        
-        services.AddScoped<IBaseRepository<ProviderRecord>, ProviderRepository>();
-        services.AddScoped<IBaseRepository<OrderItemRecord>, OrderItemRepository>();
-        services.AddScoped<IBaseRepository<OrderRecord>, OrderRepository>();
+        services.AddScoped(typeof(IBaseRepository<>), typeof(ProviderRepository));
+        services.AddScoped(typeof(IBaseRepository<>), typeof(OrderItemRepository));
+        services.AddScoped(typeof(IBaseRepository<>), typeof(OrderRepository));
     }
 }

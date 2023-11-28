@@ -15,10 +15,4 @@
       <ProjectReference Include="..\Store\Store.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Abstracts\OrderItem\" />
-      <Folder Include="Abstracts\Order\" />
-      <Folder Include="Abstracts\Provider\" />
-    </ItemGroup>
-
 </Project>
