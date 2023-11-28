@@ -19,7 +19,7 @@ public class OrderItemRecord : BaseEntity
     [ForeignKey(nameof(Order))]
     public int OrderId { get; set; }
 
-    public OrderRecord Order { get; set; }
+    public OrderRecord? Order { get; set; }
 
     /// <summary>
     /// Название товара

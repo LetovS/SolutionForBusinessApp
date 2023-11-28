@@ -7,7 +7,9 @@ namespace Store.Repositories.Implementations;
 /// <summary>
 /// Репозиторий товара
 /// </summary>
-public class OrderItemRepository<T> : BaseRepository<T>, IOrderRepository<T> where T : OrderItemRecord
+public class OrderItemRepository : BaseRepository<OrderItemRecord>
 {
-    
+    public OrderItemRepository(IResourceContext dbContext) : base(dbContext)
+    {
+    }
 }

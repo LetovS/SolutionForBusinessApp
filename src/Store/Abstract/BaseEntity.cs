@@ -5,7 +5,9 @@ namespace Store.Entities.Base;
 /// <summary>
 /// Базовая сущность базы данных
 /// </summary>
-public class BaseEntity : IEntityWithId
+public class BaseEntity : 
+    IDbEntity,
+    IEntityWithId
 {
     /// <summary>
     /// ИД заказа

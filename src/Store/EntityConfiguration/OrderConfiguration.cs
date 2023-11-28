@@ -10,9 +10,8 @@ public class OrderConfiguration : IEntityTypeConfiguration<OrderRecord>
     public void Configure(EntityTypeBuilder<OrderRecord> builder)
     {
         builder.ConfigureBaseEntity<OrderRecord>();
-        builder.Property(x => x.Number).HasMaxLength(MaxFieldLength).IsRequired();
+        builder.Property(x => x.Number).HasMaxLength(ConstantsConfigurations.MaxFieldLength).IsRequired();
         builder.Property(x => x.ProviderId).IsRequired();
         builder.Property(x => x.Date).IsRequired();
-
     }
 }

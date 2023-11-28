@@ -1,5 +1,4 @@
 ﻿using Store.Entities;
-using Store.Entities.Base;
 using Store.Repositories.Abstracts;
 
 namespace Store.Repositories.Implementations;
@@ -7,7 +6,9 @@ namespace Store.Repositories.Implementations;
 /// <summary>
 /// Репозиторий провайдеров
 /// </summary>
-public class ProviderRepository<T> : IOrderRepository<T> where T : ProviderRecord
+public class ProviderRepository : BaseRepository<ProviderRecord>
 {
-    
+    public ProviderRepository(IResourceContext dbContext) : base(dbContext)
+    {
+    }
 }

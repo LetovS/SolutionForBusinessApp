@@ -7,18 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+      <Folder Include="DI\" />
+      <Folder Include="Mapper\" />
+      <Folder Include="Models\" />
+      <Folder Include="Validations\" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Store.Migrations\Store.Migrations.csproj" />
+      <ProjectReference Include="..\Common\Common.csproj" />
+      <ProjectReference Include="..\Store.Repositories\Store.Repositories.csproj" />
       <ProjectReference Include="..\Store\Store.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Abstracts\OrderItem\" />
-      <Folder Include="Abstracts\Order\" />
-      <Folder Include="Abstracts\Provider\" />
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
     </ItemGroup>
 
 </Project>
