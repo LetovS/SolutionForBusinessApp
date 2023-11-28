@@ -5,7 +5,7 @@ namespace Business.Abstract;
 /// <summary>
 /// Детектор изменений в модели <see cref="TUpdateModel"/> относительно сущности <see cref="TEntity"/>
 /// </summary>
-public interface IChangeDetector<TEntity, TUpdateModel>
+public interface IChangeDetector<in TEntity, in TUpdateModel>
     where TEntity : class, IDbEntity
 {
     /// <summary>
