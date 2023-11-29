@@ -17,15 +17,15 @@ namespace Business.DI;
 /// </summary>
 public static class BusinessServiceCollections
 {
-    public static IServiceCollection AddBuisness(this IServiceCollection services)
+    public static IServiceCollection AddBusinessServices(this IServiceCollection services)
     {
         // Регистрация автомаппера
         services.AddAutoMapper(typeof(BusinessMapperProfile));
         
         // Регистрация бизнес валидаторов
-        services.AddScoped(typeof(IBusinessValidator<>), typeof(OrderItemValidator));
-        services.AddScoped(typeof(IBusinessValidator<>), typeof(OrderValidator));
-        services.AddScoped(typeof(IBusinessValidator<>), typeof(ProviderValidator));
+        services.AddScoped<IBusinessValidator<OrderItemRecord>,OrderItemValidator>();
+        services.AddScoped<IBusinessValidator<OrderRecord>,OrderValidator>();
+        services.AddScoped<IBusinessValidator<ProviderRecord>,ProviderValidator>();
         
         // Регистрация детекторов изменения
         services.AddScoped<IChangeDetector<OrderItemRecord, UpdateOrderItemModel>, OrderItemChangeDetector>();

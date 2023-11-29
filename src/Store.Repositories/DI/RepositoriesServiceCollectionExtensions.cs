@@ -15,7 +15,7 @@ public static class RepositoriesServiceCollectionExtensions
     {
         services.AddDbContext<IResourceContext, ResourceContext>(options => 
             options.UseSqlServer(
-                configurations.GetConnectionString("MsSql"),
+                configurations.GetConnectionString("Resources"),
                 m => m.MigrationsAssembly(typeof(DbContextFactoryBase).Assembly.GetName().Name)));
 
         services.AddScoped<IDbReader, ResourceContext>();
@@ -24,8 +24,8 @@ public static class RepositoriesServiceCollectionExtensions
 
         services.AddScoped<IEntityFactory, EntityFactory>();
         
-        services.AddScoped(typeof(IBaseRepository<>), typeof(ProviderRepository));
-        services.AddScoped(typeof(IBaseRepository<>), typeof(OrderItemRepository));
-        services.AddScoped(typeof(IBaseRepository<>), typeof(OrderRepository));
+        services.AddScoped<IBaseRepository<ProviderRecord>, ProviderRepository>();
+        services.AddScoped<IBaseRepository<OrderItemRecord>, OrderItemRepository>();
+        services.AddScoped<IBaseRepository<OrderRecord>, OrderRepository>();
     }
 }
